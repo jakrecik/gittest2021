@@ -9,3 +9,109 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/jakrecik/gittest2021.git
 git push -u origin main
+
+=========================================
+Utworzyć konto
+	
+
+		
+http://github.com 
+	
+	
+	Zainstalować GITBASH
+	
+
+		
+https://git-scm.com/downloads
+	
+	
+	Konfiguracja:
+	
+
+		
+git config --global user.name "id na githubie"
+		git config --global user.email adres@email.com
+	
+	
+	Przyłączyć się do gita
+	
+
+		
+Utworzyć katalog na komputerze np. na pulpicie mkdir gittest
+		przejść do tego katalogu w wierszu poleceń cd desktop/gittest
+		git init
+	
+	
+	Dodać dowolne pliki do katalogu gittest
+	
+
+		
+kopiuj wklej, albo tworzymy nowe pliki
+	
+	
+	Dodaj pliki do repozytorium
+	
+
+		
+"git add ."
+	
+	
+	Usuwanie plików z repozytorium
+	
+
+		
+"git rm nazwapliku ."
+	
+	
+	Sprawdzenie statusu plików
+	
+
+		
+git status
+		Changes to be committed - to znaczy, że zmiany czekają na zatwierdzenie
+		new file - nowy plik do dodania
+		modified - plik który został zmodyfikowany
+		deleted - pliki do usunięcia z repozytorium
+	
+	
+	Zatwierdzenie zmian (commit)
+	
+
+		
+git commit -m "komentarz"
+		Od teraz pliki znajdują się w repozytorium LOKALNYM!!!
+	
+	
+	Po zalogowaniu na stronie github tworzymy nowe repozytorium
+	
+
+		
+logowanie http://github.com
+		zakładka repositories
+		+NEW
+		podajemy nazwę, ewentualnie opis i klikamy "create"
+		W następnym oknie, które się pojawi widać adres repozytorium oraz listę komend, które pozwolą przesłać pliki z repozytorium lokalnego do zdalnego
+	
+	
+	Utwórz plik README.md, który będzie służył do umieszczania informacji o modyfikacjach
+	
+
+		
+echo "#gittest2021" >> README.md
+	
+	
+	Wpisz wszystkie podpowiadane polecenia
+	
+
+		
+git init
+		git add README.md
+		git commit -m "mój pierwszy commit"
+		git branch -M main
+		git remote add origin https://github.com/nazwauzytkownika/gittest2021.git
+		git push -u origin main
+		podajemy dane logowania w nowo otwartym oknie
+	
+	
+	Jeżeli chcesz dodać kolejne pliki lub ich wersje - git add, git commit itp.
+	Do pobrania aktualnej wersji plików na PC służy git pull
